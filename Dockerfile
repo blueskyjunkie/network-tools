@@ -5,7 +5,9 @@ RUN apt-get update \
       dnsutils \
       iputils-ping \
       net-tools \
+      netcat \
       traceroute \
-      wget
+      wget \
+ && rm -rf /var/lib/apt/lists/*
 
 CMD [ "tail","-f","/dev/null" ]
