@@ -3,6 +3,7 @@ FROM ubuntu:20.04
 RUN apt-get update \
  && apt-get install -y \
       dnsutils \
+      iperf3 \
       iputils-ping \
       net-tools \
       netcat \
